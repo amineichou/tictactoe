@@ -37,6 +37,15 @@ var tieAudio = new Audio('./audios/tie.mp3');
 const cells = document.querySelectorAll('.cell');
 
 
+// set the score to 0 when runing the app for the first time
+const setScore = () => {
+    if (localStorage.length == 0) {
+        localStorage.setItem('human', 0); 
+        localStorage.setItem('robot', 0);
+    }
+}
+setScore();
+
 const startGame = () => {
     // this function starts a new game 
     document.querySelector(".endgame").style.display = "none";
