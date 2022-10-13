@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.title {
+    font-size: 40px;
+    color: #8a2be2;
+    padding: 20px 0;
+}
+
+.instructions {
+    text-align: center;
+    color: #555555;
+    font-size: 14px;
+}
+
+td {
+    border: 2px #8a8a8a solid;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    top: 170px;
+}
+
+table tr:first-child td {
+    border-top: 0;
+}
+
+table tr:last-child td {
+    border-bottom: 0;
+}
+
+table tr td:first-child {
+    border-left: 0;
+}
+
+table tr td:last-child {
+    border-right: 0;
+}
+
+.endgame {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    padding: 40px 50px;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 10px;
+    top: 200px;
+    font-size: 10px;
+    opacity: 0.9;
+    text-align: center;
+    gap: 20px;
+    font-size: 18px;
+}
+
+.startBtn {
+    padding: 8px;
+    bottom: 50px;
+    border-radius: 10px;
+    border: #fff solid 2px;
+    font-weight: bold;
+    color: #000;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    background-color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.score {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.score h1 {
+    font-size: 20px;
+}
+
+.scoreBtn {
+    background: #8a2be2;
+    padding: 6px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}

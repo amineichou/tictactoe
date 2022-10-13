@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tic tac toe</title>
+</head>
+
+<body>
+    <h1 class="title">Tic Tac Toe</h1>
+    <p class="instructions">by : <a href="https://amineichou.github.io/portfolio">amine ichou</a></p>
+    <a href="github">source code</a>
+    <table>
+        <tr>
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+        </tr>
+    </table>
+    <div class="endgame">
+        <h1 class="endgame-text"></h1>
+        <button class="startBtn" onclick="startGame()">Replay</button>
+    </div>
+    <div class="score">
+        <div>
+            <h1>Score :</h1>
+            <p class="human"></p>
+            <p class="robot"></p>
+        </div>
+        <button class="scoreBtn" onclick="clearScore()">
+            Clear Score
+        </button>
+    </div>
+</body>
+<script src="script.js"></script>
+
+</html>
