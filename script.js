@@ -82,13 +82,13 @@ const checkTie = () => {
     if (emptySquares().length == 0 && !checkWin(Table, humanPlayer)) {
         for (var i = 0; i < cells.length; i++) {
             // turn the cells background color to blue because no one win the game
-            cells[i].style.backgroundColor = 'blue';
+            cells[i].style.backgroundColor = '#0000ff50';
             // removing the event listener so you can't click (play the game) anymore after the game over
             cells[i].removeEventListener('click', turnClick, false);
             // play tie audio
             tieAudio.play();
         }
-        declareWinner('Tie game');
+        declareWinner('Almost!');
         return true;
     }
     return false;
@@ -123,7 +123,7 @@ const gameOver = (gameWon) => {
     // this function runs when gameWon (when a player won)
     for (let index of winCombos[gameWon.index]) {
         // turn the cells background color to green if the human player won or the to red when the robot won
-        document.getElementById(index).style.backgroundColor = gameWon.player == humanPlayer ? 'green' : 'red';
+        document.getElementById(index).style.backgroundColor = gameWon.player == humanPlayer ? '#00800050' : '#ff000050';
     }
     for (var i = 0; i < cells.length; i++) {
         // removing the event listener so you can't click (play the game) anymore after the game over
