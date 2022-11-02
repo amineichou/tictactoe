@@ -1,109 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
     <title>tic tac toe</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- game elements -->
     <div class="game-container">
-        <div class="instructions">
-            <h1 class="title">Tic Tac Toe</h1>
-            <div class="copyright">
-                <p>by : <a href="https://amineichou.github.io/portfolio">amine ichou </a></p>
-                <a href="https://github.com/amineichou/tictactoe">source code</a>
-            </div>
+      <div class="instructions">
+        <h1 class="title">Tic Tac Toe</h1>
+        <div class="copyright">
+          <p>
+            by :
+            <a href="https://amineichou.github.io/portfolio">amine ichou </a>
+          </p>
+          <a href="https://github.com/amineichou/tictactoe">source code</a>
         </div>
-        <table>
-            <tr>
-                <td class="cell" id="0"></td>
-                <td class="cell" id="1"></td>
-                <td class="cell" id="2"></td>
-            </tr>
-            <tr>
-                <td class="cell" id="3"></td>
-                <td class="cell" id="4"></td>
-                <td class="cell" id="5"></td>
-            </tr>
-            <tr>
-                <td class="cell" id="6"></td>
-                <td class="cell" id="7"></td>
-                <td class="cell" id="8"></td>
-            </tr>
-        </table>
-        <div class="endgame">
-            <h1 class="endgame-text"></h1>
-            <button class="startBtn" onclick="startGame()">Replay</button>
+      </div>
+      <table>
+        <tr>
+          <td class="cell" id="0"></td>
+          <td class="cell" id="1"></td>
+          <td class="cell" id="2"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="3"></td>
+          <td class="cell" id="4"></td>
+          <td class="cell" id="5"></td>
+        </tr>
+        <tr>
+          <td class="cell" id="6"></td>
+          <td class="cell" id="7"></td>
+          <td class="cell" id="8"></td>
+        </tr>
+      </table>
+      <div class="endgame">
+        <h1 class="endgame-text"></h1>
+        <button class="startBtn" onclick="">Replay</button>
+      </div>
+      <div class="score">
+        <div>
+          <h1>Score :</h1>
+          <p class="human"></p>
+          <p class="robot"></p>
         </div>
-        <div class="score">
-            <div>
-                <h1>Score :</h1>
-                <p class="human"></p>
-                <p class="robot"></p>
-            </div>
-            <button class="scoreBtn" onclick="clearScore()">Clear Score</button>
-        </div>
+        <button class="scoreBtn" onclick="">Clear Score</button>
+      </div>
     </div>
     <!-- animated background -->
-    <div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-    </div>
-</body>
-<script src="script.js?n=1"></script>
-
+    <div data-bubbles class="bubbles"></div>
+  </body>
+  <script src="script.js?n=1"></script>
 </html>
